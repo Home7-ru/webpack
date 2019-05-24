@@ -1,4 +1,6 @@
 const path = require('path');
+//для обращения к внутренним данным webpack
+const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
@@ -46,7 +48,13 @@ module.exports = {
         // сменил на ^1.0.0
         new CleanWebpackPlugin([
             './dist/*.*'
-        ])
+        ]),
+
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
+        }),
 
     ]
 }
