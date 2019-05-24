@@ -1,6 +1,7 @@
 import "jquery";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "popper.js"
+import 'bootstrap';
 
 import "./styles.css"
 let a=15;
