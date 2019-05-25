@@ -1,9 +1,10 @@
-import "jquery";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "popper.js"
-import 'bootstrap';
+// import "jquery";
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import "popper.js"
+// import 'bootstrap';
 
-import "./styles.css"
+import "./style.scss"
+//import "./styles.css"
 let a=15;
 
 $(document).ready(function(){

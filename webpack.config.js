@@ -7,7 +7,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     // development ,production
-    mode: 'development',
+    mode: 'production',
     // точка входа
     entry: './src/index.js',
     // точка выхода
@@ -20,13 +20,11 @@ module.exports = {
         rules: [
             {
                 //
-                test: /\.css$/,
+                test: /\.scss$/,
                 use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader
-
-                    },
-                    'css-loader'
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'sass-loader'
                 ],
             },
         ],
