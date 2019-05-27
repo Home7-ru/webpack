@@ -1,13 +1,12 @@
 const path = require('path');
 //для обращения к внутренним данным webpack
-const webpack = require('webpack')
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-    // development ,production
-    mode: 'production',
+
     // точка входа
     entry: './src/index.js',
     // точка выхода
