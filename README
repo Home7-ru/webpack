@@ -1,4 +1,8 @@
 --------------------------------------------
+добавлен
+webpack/webpack-dev-server
+https://webpack.js.org/configuration/dev-server#devserver
+--------------------------------------------
 установлен модуль
 npm install --save-dev webpack-merge
 

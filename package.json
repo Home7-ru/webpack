@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --config webpack.dev.js",
+    "start": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "prod": "webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,6 +22,7 @@
     "style-loader": "^0.23.1",
     "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1",
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
