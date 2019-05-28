@@ -1,4 +1,9 @@
 --------------------------------------------
+пробуем разделение на server,prod,dev
+    server -запускает все через dev Server
+    prod создает файлы для production
+    dev  создает файлы для просмотра
+--------------------------------------------
 добавлен
 webpack/webpack-dev-server
 https://webpack.js.org/configuration/dev-server#devserver
