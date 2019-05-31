@@ -1,7 +1,7 @@
-@import "~bootstrap/scss/bootstrap-grid";
-
+//@import "~bootstrap/scss/bootstrap-grid";
+@import "/style1";
 $blue: #3bbfce;
-$margin: 16px;
+$margin: 10px;
 
 .content-navigation {
   border-color: $blue;
@@ -9,6 +9,11 @@ $margin: 16px;
 }
 
 .border {
+  padding: $margin / 2;
+  margin: $margin / 2;
+  border-color: $blue;
+}
+.border1 {
   padding: $margin / 2;
   margin: $margin / 2;
   border-color: $blue;

@@ -22,8 +22,15 @@ module.exports = {
                 test: /\.scss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    'css-loader',
-                    'sass-loader'
+                    {loader:'css-loader',
+                        options: {
+                            sourceMap: true}
+                            },
+                    {loader:'sass-loader',
+                        options: {
+                            sourceMap: true}
+
+                    }
                 ],
             },
         ],
@@ -45,13 +52,13 @@ module.exports = {
         // сменил на ^1.0.0
         new CleanWebpackPlugin([
             './dist/*.*'
-        ]),
+        ])
 
-        new webpack.ProvidePlugin({
-            $: 'jquery',
-            jQuery: 'jquery',
-            'window.jQuery': 'jquery'
-        }),
+        // new webpack.ProvidePlugin({
+        //     $: 'jquery',
+        //     jQuery: 'jquery',
+        //     'window.jQuery': 'jquery'
+        // }),
 
     ]
 }

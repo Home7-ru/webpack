@@ -6,7 +6,12 @@ module.exports = merge(common, {
     devServer: {
         contentBase: './dist',
         compress: true,
-        port: 9000
+        port: 9000,
+        //выводим ошибки в браузер
+        overlay: {
+            warnings: true,
+            errors: true
+        }
     }
 
 });

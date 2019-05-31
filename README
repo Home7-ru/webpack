@@ -1,17 +1,7 @@
---------------------------------------------
-пробуем разделение на server,prod,dev
-    server -запускает все через dev Server
-    prod создает файлы для production
-    dev  создает файлы для просмотра
---------------------------------------------
-добавлен
-webpack/webpack-dev-server
-https://webpack.js.org/configuration/dev-server#devserver
---------------------------------------------
-установлен модуль
-npm install --save-dev webpack-merge
+-----------------------------------------
+1)допиасл для dev отслеживание в файлах
+https://webpack.js.org/configuration/watch/
 
-конфигурация произведенна по сылки
-https://webpack.js.org/guides/production/
-
---------------------------------------------
+2)переписаны 'css-loader','sass-loader' с добавление options
+3)выводим ошибки в браузер
+-----------------------------------------
