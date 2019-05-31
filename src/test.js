@@ -1,4 +1,4 @@
 console.log("22");
 
-let =45;
+let b=45;
 
