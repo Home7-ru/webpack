@@ -1,7 +1,8 @@
 -----------------------------------------
-1)допиасл для dev отслеживание в файлах
-https://webpack.js.org/configuration/watch/
-
-2)переписаны 'css-loader','sass-loader' с добавление options
-3)выводим ошибки в браузер
+1)cssnano
+npm install cssnano --save-dev
+2)mqpacker
+npm install --save-dev css-mqpacker
+3)autoprefixer
+npm install --save-dev autoprefixer
 -----------------------------------------

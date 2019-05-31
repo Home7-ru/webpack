@@ -1,4 +1,28 @@
 .alert-warning{
   display: block;
-  
+
 }
+.widget1 {
+  width: 100%;
+
+  @media (min-width: 30em) {
+    width: 50%;
+  }
+
+  @media (min-width: 60em) {
+    width: 25%;
+  }
+}
+
+.widget2 {
+  width: 100px;
+
+  @media (min-width: 30em) {
+    width: 200px;
+  }
+}
+
+.block {
+  transform: rotate(7deg);
+}
+

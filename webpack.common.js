@@ -21,11 +21,16 @@ module.exports = {
                 test: /\.scss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    {loader:'css-loader',
-                        options: {
-                            sourceMap: true}
-                            },
-                    {loader:'sass-loader',
+                    {
+                        loader:'css-loader',
+                        options: {sourceMap: true}
+                    },
+                    {
+                        loader: 'postcss-loader',
+                        options: { sourceMap: true, config: { path: `./postcss.config.js` } }
+                    },
+                    {
+                        loader:'sass-loader',
                         options: {
                             sourceMap: true}
 
