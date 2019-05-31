@@ -1,5 +1,6 @@
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
+const webpack = require('webpack');
 
 module.exports = merge(common, {
        mode: 'development',
@@ -10,6 +11,12 @@ module.exports = merge(common, {
        watchOptions:{
               aggregateTimeout:100,
               ignored: /node_modules/
-       }
+       },
+       //выводит файлы сурс меп в отдельный фаил
+       // plugins: [
+       //        new webpack.SourceMapDevToolPlugin({
+       //               filename: '1.map'
+       //        })
+       // ]
 });
 
