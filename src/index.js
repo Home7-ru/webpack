@@ -3,8 +3,8 @@
 // import "popper.js"
 // import 'bootstrap';
 
-import "./style.scss"
-import "./test.js"
+import "./scss/style.scss"
+import "./js/test.js"
 //import "./styles.css"
 let a=15;
 

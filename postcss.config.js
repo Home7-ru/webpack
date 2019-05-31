@@ -12,14 +12,14 @@ module.exports = {
         require('css-mqpacker'),
 
         //сжимает вайлы css
-        require('cssnano')({
-            preset: [
-                'default', {
-                    discardComments: {
-                        removeAll: true
-                    }
-                }
-            ]
-        })
+        // require('cssnano')({
+        //     preset: [
+        //         'default', {
+        //             discardComments: {
+        //                 removeAll: true
+        //             }
+        //         }
+        //     ]
+        // })
     ]
 }
